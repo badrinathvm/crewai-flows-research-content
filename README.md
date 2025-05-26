@@ -25,6 +25,10 @@ Ensure you have Python >=3.10 <3.13 installed. This project uses [UV](https://do
 1. Install UV:
 ```bash
 pip install uv
+
+# using uv 
+uv sync
+uv lock
 ```
 
 2. Clone and setup the project:
@@ -32,11 +36,15 @@ pip install uv
 git clone <repository-url>
 cd content-research-crew
 crewai install
+
+# Install via python way 
+python main.py
 ```
 
 3. Configure your environment:
 - Copy `.env.example` to `.env`
 - Add your `OPENAI_API_KEY` to `.env`
+- You can also use Ollama, make sure to run ollama on your machine and point that url 
 
 ## Configuration
 
